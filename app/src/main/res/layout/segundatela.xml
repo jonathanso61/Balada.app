@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Segundatela">
+
+    <TextView
+        android:id="@+id/textViewCaixa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Caixa" />
+
+    <TextView
+        android:id="@+id/textViewGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCaixa"
+        android:layout_marginTop="100dp"
+        android:text="Gasto" />
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGasto"
+        android:layout_marginTop="112dp"
+        android:text="Total" />
+
+</RelativeLayout>

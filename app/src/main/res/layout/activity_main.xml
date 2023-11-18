@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="Nome" />
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="51dp"
+        android:hint="Valor" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextValue"
+        android:layout_marginTop="42dp"
+        android:hint="Data" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate"
+        android:layout_marginTop="40dp"
+        android:text="Cadastro" />
+
+    <Button
+        android:id="@+id/btnResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCadastro"
+        android:layout_marginTop="21dp"
+        android:text="Resumo" />
+
+    <!-- RadioButton para Entrada -->
+    <RadioButton
+        android:id="@+id/radioEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnResumo"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:text="Entrada"
+        android:onClick="marcarEntrada" />
+
+    <!-- RadioButton para Saída -->
+    <RadioButton
+        android:id="@+id/radioSaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioEntrada"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Saída"
+        android:onClick="marcarSaida" />
+</RelativeLayout>
